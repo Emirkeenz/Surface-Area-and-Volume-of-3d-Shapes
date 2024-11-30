@@ -2,9 +2,15 @@ package org.example;
 
 public class Cube implements Shape3DInterface {
     private double side;
+    private String name;
 
     public Cube(double side) {
         this.side = side;
+        this.name = "Cube";
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -19,7 +25,7 @@ public class Cube implements Shape3DInterface {
 
     @Override
     public String toString() {
-        return "Cube{" +
+        return name +
                 "side=" + String.format("%.2f", side) +
                 ", volume=" + String.format("%.2f", volume()) +
                 ", area=" + String.format("%.2f", surfaceArea()) +

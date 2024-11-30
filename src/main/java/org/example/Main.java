@@ -29,7 +29,23 @@ public class Main {
         }
 
         for (Shape3DInterface shape : shapes) {
-            System.out.println(shape);
+            if (shape instanceof Sphere) {
+                Sphere sphere = (Sphere) shape;
+                System.out.println("Shape: " + sphere.getName());
+                System.out.println("Surface Area: " + sphere.surfaceArea());
+                System.out.println("Volume: " + sphere.volume());
+            } else if (shape instanceof Cylinder) {
+                Cylinder cylinder = (Cylinder) shape;
+                System.out.println("Shape: " + cylinder.getName());
+                System.out.println("Surface Area: " + cylinder.surfaceArea());
+                System.out.println("Volume: " + cylinder.volume());
+            } else if (shape instanceof Cube) {
+                Cube cube = (Cube) shape;
+                System.out.println("Shape: " + cube.getName());
+                System.out.println("Surface Area: " + cube.surfaceArea());
+                System.out.println("Volume: " + cube.volume());
+            }
+            System.out.println();
         }
     }
 }

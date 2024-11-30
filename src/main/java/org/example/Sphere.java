@@ -2,9 +2,15 @@ package org.example;
 
 public class Sphere implements Shape3DInterface {
     private double radius;
+    private String name;
 
     public Sphere(double radius) {
         this.radius = radius;
+        this.name = "Sphere";
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -19,8 +25,8 @@ public class Sphere implements Shape3DInterface {
 
     @Override
     public String toString() {
-        return "Sphere {" +
-                "radius=" + String.format("%.2f", radius) +
+        return name +
+                ", radius=" + String.format("%.2f", radius) +
                 ", volume=" + String.format("%.2f", volume()) +
                 ", area=" + String.format("%.2f", surfaceArea()) +
                 '}';
