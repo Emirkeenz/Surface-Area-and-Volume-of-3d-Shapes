@@ -30,7 +30,7 @@ for (Shape3DInterface shape : shapes) {
 ```
 
 ## **Sample Outputs**
-Run 1:
+- Run 1:
 Shape: Cylinder
 Surface Area: 731.45
 Volume: 1475.21
@@ -43,7 +43,7 @@ Shape: Sphere
 Surface Area: 64.45
 Volume: 48.65
 
-Run 2:
+- Run 2:
 Shape: Sphere
 Surface Area: 14.09
 Volume: 4.97
@@ -57,10 +57,10 @@ Surface Area: 161.29
 Volume: 101.24
 
 ## **How to run the project**
-$ git clone <repository-URL>
-$ cd 3D-Shapes-Polymorphism
-$ javac Main.java
-$ java Main
+- git clone <repository-URL>
+- cd 3D-Shapes-Polymorphism
+- javac Main.java
+- java Main
 
 ## **Future Enhancements**
 - Add more shapes, such as cones or pyramids.
